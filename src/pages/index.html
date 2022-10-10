@@ -1,13 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/assets/styles/tailwind.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline text-red-500">
-    Hello world!
-  </h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/src/assets/styles/tailwind.css" rel="stylesheet" />
+        <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="fixed inset-x-0 top-0 bg-white px-2 sm:px-4 py-2.5 rounded">
+            <div
+                class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="#">
+                    <img
+                        src="/src/assets/images/logo.png"
+                        class="mr-3 h-8 sm:h-9"
+                        alt="Logo" />
+                </a>
+                <button
+                    data-collapse-toggle="navbar-default"
+                    type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white"
+                    aria-controls="navbar-default"
+                    aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                        class="w-6 h-6"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div
+                    class="hidden w-full md:block md:w-auto"
+                    id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-dark-soft md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-white bg-orange rounded md:bg-transparent md:text-orange md:p-0"
+                                aria-current="page"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >Services</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >Clients</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >Blog</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Of Navigation -->
+
+        <!-- Hero Section -->
+        <section class="flex flex-col lg:flex-row-reverse gap-8 lg:justify-between items-center lg:items-start bg-orange-soft lg:px-12 py-28">
+            <img
+                src="/src/assets/images/hero-image.png"
+                alt="Hero Image"
+                class="w-[80%]  sm:w-[70%] lg:w-[40%]" />
+
+            <div class="flex flex-col items-center lg:items-start px-12 lg:px-0 lg:w-[50%]">
+                <h1 class="text-center text-black-soft lg:text-left text-4xl lg:text-[3.8rem] font-semibold leading-normal">
+                    We Are The Best <span class="text-orange">Digital Agency</span> for Business
+                </h1>
+                <p class="text-base lg:text-lg text-center lg:text-left leading-relaxed text-gray my-5">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                </p>
+                <a
+                    href="#"
+                    class="inline lg:mt-5 text-white hover:brightness-95 duration-150 bg-orange font-medium rounded-md text-sm lg:text-xl px-7 py-3 w-max"
+                    >Contact Us</a
+                >
+            </div>
+        </section>
+        <!--End Of Hero Section -->
+    </body>
 </html>
