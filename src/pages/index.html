@@ -1,13 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/assets/styles/tailwind.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline text-red-500">
-    Hello world!
-  </h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/src/assets/styles/tailwind.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="fixed inset-x-0 top-0 bg-white px-2 sm:px-4 py-2.5 rounded">
+            <div
+                class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="#">
+                    <img
+                        src="/src/assets/images/logo.png"
+                        class="mr-3 h-8 sm:h-9"
+                        alt="Logo" />
+                </a>
+                <button
+                    data-collapse-toggle="navbar-default"
+                    type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-white"
+                    aria-controls="navbar-default"
+                    aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                        class="w-6 h-6"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div
+                    class="hidden w-full md:block md:w-auto"
+                    id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 rounded-lg border border-dark-soft md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-white bg-orange rounded md:bg-transparent md:text-orange md:p-0"
+                                aria-current="page"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >Services</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >Clients</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 pr-4 pl-3 text-dark-strong rounded hover:bg-orange-soft md:hover:bg-transparent md:border-0 md:hover:text-orange md:p-0"
+                                >Blog</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Of Navigation -->
+
+        <!-- Hero Section -->
+        <section
+            class="flex flex-col lg:flex-row-reverse gap-8 lg:justify-between items-center lg:items-start bg-orange-soft lg:px-12 pt-28 pb-20">
+            <img
+                src="/src/assets/images/hero-image.png"
+                alt="Hero Image"
+                class="w-[80%] sm:w-[70%] lg:w-[40%]" />
+
+            <div
+                class="flex flex-col items-center lg:items-start px-12 lg:px-0 lg:w-[50%]">
+                <h1
+                    class="text-center text-black-soft lg:text-left text-4xl xl:text-[3.8rem] font-semibold leading-normal">
+                    We Are The Best
+                    <span class="text-orange">Digital Agency</span> for Business
+                </h1>
+                <p
+                    class="text-base lg:text-lg text-center lg:text-left leading-relaxed text-gray my-5">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Amet minim mollit non deserunt ullamco est sit
+                    aliqua dolor do amet sint.
+                </p>
+                <a
+                    href="#"
+                    class="inline mt-5 text-white hover:brightness-95 duration-150 bg-orange font-medium rounded-md text-sm lg:text-xl px-7 py-3 w-max"
+                    >Contact Us</a
+                >
+            </div>
+        </section>
+        <!--End Of Hero Section -->
+
+        <!-- About Us Section -->
+        <section class="bg-white">
+            <div
+                class="flex flex-col lg:flex-row gap-8 lg:justify-between items-center lg:px-12 py-20">
+                <img
+                    src="/src/assets/images/about-us-image.png"
+                    alt="Hero Image"
+                    class="w-[80%] sm:w-[70%] lg:w-[40%]" />
+
+                <div
+                    class="flex flex-col items-center lg:items-start px-12 lg:px-0 lg:w-[50%]">
+                    <span
+                        class="text-base lg:text-lg text-center lg:text-left leading-relaxed text-gray my-5"
+                        >About Us</span
+                    >
+                    <h1
+                        class="text-center text-black-soft lg:text-left text-3xl xl:text-[3rem] font-semibold leading-normal">
+                        We Are The
+                        <span class="text-orange">Making Ideas Better</span> for
+                        Everyone
+                    </h1>
+                    <p
+                        class="text-base lg:text-lg text-center lg:text-left leading-relaxed text-gray my-5">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Amet minim mollit non deserunt ullamco est
+                        sit aliqua dolor do amet sint.
+                    </p>
+                    <p
+                        class="text-base lg:text-lg text-center lg:text-left leading-relaxed text-gray my-5">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                    </p>
+                    <a
+                        href="#"
+                        class="inline text-white hover:brightness-95 duration-150 bg-orange font-medium rounded-md text-sm lg:text-xl px-7 py-3 w-max"
+                        >Contact Us</a
+                    >
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-4 items-center md:items-stretch px-12">
+                <div
+                    class="flex flex-col items-center gap-5 p-8 min-w-[230px] max-w-screen-sm bg-white rounded-lg border border-slate-300 shadow-sm hover:bg-orange-soft">
+                    <div
+                        class="flex items-center place-content-center w-[70px] h-[70px] bg-orange rounded-full">
+                        <img
+                            class="w-8"
+                            src="/src/assets/images/icon-file.svg"
+                            alt="file icon" />
+                    </div>
+                    <span
+                        class="text-xl font-medium text-black-soft text-center"
+                        >World leader in consulting and finance</span
+                    >
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-5 p-8 min-w-[230px] max-w-screen-sm bg-white rounded-lg border border-slate-300 shadow-sm hover:bg-orange-soft">
+                    <div
+                        class="flex items-center place-content-center w-[70px] h-[70px] bg-gray rounded-full">
+                        <img
+                            class="w-8"
+                            src="/src/assets/images/icon-code.svg"
+                            alt="code icon" />
+                    </div>
+                    <span
+                        class="text-xl font-medium text-black-soft text-center"
+                        >A focused team with a specialized skill</span
+                    >
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-5 p-8 min-w-[230px] max-w-screen-sm bg-white rounded-lg border border-slate-300 shadow-sm hover:bg-orange-soft">
+                    <div
+                        class="flex items-center place-content-center w-[70px] h-[70px] bg-[#00ACFF] rounded-full">
+                        <img
+                            class="w-8"
+                            src="/src/assets/images/icon-setting.svg"
+                            alt="file icon" />
+                    </div>
+                    <span
+                        class="text-xl font-medium text-black-soft text-center"
+                        >Trusted and profesional advisors for you</span
+                    >
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-5 p-8 min-w-[230px] max-w-screen-sm bg-white rounded-lg border border-slate-300 shadow-sm hover:bg-orange-soft">
+                    <div
+                        class="flex items-center place-content-center w-[70px] h-[70px] bg-dark-mid rounded-full">
+                        <img
+                            class="w-8"
+                            src="/src/assets/images/icon-new-tab.svg"
+                            alt="file icon" />
+                    </div>
+                    <span
+                        class="text-xl font-medium text-black-soft text-center"
+                        >Experience to give you a better results</span
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- End Ff About Us Section -->
+    </body>
 </html>
