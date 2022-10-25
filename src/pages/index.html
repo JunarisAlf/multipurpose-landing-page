@@ -791,7 +791,8 @@
                         With Us
                     </h1>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 gap-4">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 gap-4">
                     <div
                         class="grid grid-cols-5 grid-rows-4 bg-white rounded-sm shadow-md p-8 gap-8">
                         <div class="col-span-2 row-span-2">
@@ -885,5 +886,58 @@
             </div>
         </section>
         <!-- End of Contact Us Section -->
+
+        <!-- Start of Message Section -->
+        <section class="bg-white py-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-5 items-center">
+                <div class="lg:col-span-2 lg:row-span-5">
+                    <img class="mx-auto" src="/src/assets/images/message-image.png" alt="message image">
+                </div>
+                <div class="flex flex-col items-center px-12 lg:col-span-2 lg:row-span-1">
+                    <h1
+                        class="text-center text-black-soft text-3xl xl:text-[3rem] font-semibold leading-normal">
+                        Send Yours
+                        <span class="text-orange">Message To Us</span>
+                    </h1>
+                </div>
+                <form
+                    action=""
+                    class="w-full px-8 lg:col-span-2 lg:row-span-4">
+                    <input
+                        type="text"
+                        class="text-gray text-sm rounded-lg border border-gray focus:ring-orange p-2.5 pl-4 h-[60px] w-full shadow-sm my-4"
+                        placeholder="Name"
+                        required />
+                    <input
+                        type="email"
+                        class="text-gray text-sm rounded-lg border border-gray focus:ring-orange p-2.5 pl-4 h-[60px] w-full shadow-sm my-4"
+                        placeholder="Email"
+                        required />
+                    <input
+                        type="number"
+                        class="text-gray text-sm rounded-lg border border-gray focus:ring-orange p-2.5 pl-4 h-[60px] w-full shadow-sm my-4"
+                        placeholder="Mobile No"
+                        required />
+                    <input
+                        type="text"
+                        class="text-gray text-sm rounded-lg border border-gray focus:ring-orange p-2.5 pl-4 h-[60px] w-full shadow-sm my-4"
+                        placeholder="Subject"
+                        required />
+
+                    <textarea
+                        type="text"
+                        class="text-gray text-sm rounded-lg border border-gray focus:ring-orange p-2.5 pl-4 h-[180px] w-full shadow-sm my-4"
+                        placeholder="Send Message"
+                        required>
+                    </textarea>
+                    <a
+                        href="#"
+                        class="inline mt-5 text-white hover:brightness-95 duration-150 bg-orange font-medium rounded-md text-sm lg:text-xl px-7 py-3 w-max"
+                        >Send Message</a
+                    >
+                </form>
+            </div>
+        </section>
+        <!-- End of Message Section -->
     </body>
 </html>
